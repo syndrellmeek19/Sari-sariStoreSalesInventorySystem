@@ -46,7 +46,6 @@ namespace WpfApplication1
             con1.Open();
             command1.ExecuteNonQuery();
             con1.Close();
-
             this.Close();
         }
     }

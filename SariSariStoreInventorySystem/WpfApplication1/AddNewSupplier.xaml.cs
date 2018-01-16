@@ -38,8 +38,9 @@ namespace WpfApplication1
             SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_\SariSariStoreInventorySystem\WpfApplication1\Database1.mdf;Integrated Security=True;Connect Timeout=30;");
             SqlDataAdapter adapter1 = new SqlDataAdapter();
             SqlCommand command1 = new SqlCommand();
-            command1 = new SqlCommand("INSERT INTO [SUPPLIER](Supplier_Name) VALUES (@Supplier_Name)", con1);
+            command1 = new SqlCommand("INSERT INTO [SUPPLIERS](Supplier_Name, Contact_Number) VALUES (@Supplier_Name,@Contact_Number)", con1);
             command1.Parameters.AddWithValue("@Supplier_Name", TxtNewName.Text);
+            command1.Parameters.AddWithValue("@Contact_Number", TxtNewNumber.Text);
             con1.Open();
             command1.ExecuteNonQuery();
             con1.Close();
