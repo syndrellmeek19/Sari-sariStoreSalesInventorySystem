@@ -35,7 +35,7 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_\SariSariStoreInventorySystem\WpfApplication1\Database1.mdf;Integrated Security=True;Connect Timeout=30;");
+            SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\USERS\SYNMLMALUENDA\DESKTOP\SARISARISTOREINVENTORYSYSTEM\WPFAPPLICATION1\DATABASE1.MDF;Integrated Security=True;Connect Timeout=30;");
             SqlDataAdapter adapter1 = new SqlDataAdapter();
             SqlCommand command1 = new SqlCommand();
             command1 = new SqlCommand("INSERT INTO [SUPPLIERS](Supplier_Name, Contact_Number) VALUES (@Supplier_Name,@Contact_Number)", con1);

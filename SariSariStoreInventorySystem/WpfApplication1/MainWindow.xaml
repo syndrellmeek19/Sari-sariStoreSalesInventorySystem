@@ -192,15 +192,18 @@
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
                                 <TextBlock HorizontalAlignment="Right" Grid.Row="0" Grid.Column="0" Text="Product ID" FontSize="20" Margin="3"/>
                                 <TextBlock HorizontalAlignment="Right" Grid.Row="1" Grid.Column="0" Text="Product Name" FontSize="20" Margin="3"/>
-                                <TextBlock HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0" Text="Quantity" FontSize="20" Margin="3"/>
-                                <TextBlock HorizontalAlignment="Right" Grid.Row="3" Grid.Column="0" Text="Price" FontSize="20" Margin="3"/>
+                                <TextBlock HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0" Text="Product Type" FontSize="20" Margin="3"/>
+                                <TextBlock HorizontalAlignment="Right" Grid.Row="3" Grid.Column="0" Text="Quantity" FontSize="20" Margin="3"/>
+                                <TextBlock HorizontalAlignment="Right" Grid.Row="4" Grid.Column="0" Text="Price" FontSize="20" Margin="3"/>
                                 <TextBox Grid.Row="0" Grid.Column="1" Margin="3" FontSize="20" Name="TxtPID"/>
                                 <TextBox Grid.Row="1" Grid.Column="1" Margin="3" FontSize="20" Name="TxtPName"/>
-                                <TextBox Grid.Row="2" Grid.Column="1" Margin="3" FontSize="20" Name="TxtQuantity"/>
-                                <TextBox Grid.Row="3" Grid.Column="1" Margin="3" FontSize="20" Name="TxtCost"/>
+                                <TextBox Grid.Row="2" Grid.Column="1" Margin="3" FontSize="20" Name="TxtPType"/>
+                                <TextBox Grid.Row="3" Grid.Column="1" Margin="3" FontSize="20" Name="TxtQuantity"/>
+                                <TextBox Grid.Row="4" Grid.Column="1" Margin="3" FontSize="20" Name="TxtCost"/>
                             </Grid>
                             <Grid Grid.Row="2">
                                 <Grid.ColumnDefinitions>
