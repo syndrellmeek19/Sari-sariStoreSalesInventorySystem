@@ -1,0 +1,33 @@
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\bin\Debug\SariSariStoreSIS.exe.config
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\bin\Debug\SariSariStoreSIS.exe
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\bin\Debug\SariSariStoreSIS.pdb
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.csprojResolveAssemblyReference.cache
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\MainWindow.g.cs
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\App.g.cs
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS_MarkupCompile.cache
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS_MarkupCompile.lref
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\MainWindow.baml
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.g.resources
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.Properties.Resources.resources
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.csproj.GenerateResource.Cache
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.exe
+c:\users\liluser\documents\visual studio 2015\Projects\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.pdb
+D:\_\SariSariStoreSIS\SariSariStoreSIS\bin\Debug\SariSariStoreSIS.exe.config
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.exe
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.pdb
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.csprojResolveAssemblyReference.cache
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\MainWindow.g.cs
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\App.g.cs
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS_MarkupCompile.cache
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS_MarkupCompile.lref
+D:\_\SariSariStoreSIS\SariSariStoreSIS\bin\Debug\SariSariStoreSIS.exe
+D:\_\SariSariStoreSIS\SariSariStoreSIS\bin\Debug\SariSariStoreSIS.pdb
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\MainWindow.baml
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.g.resources
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.Properties.Resources.resources
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS.csproj.GenerateResource.Cache
+D:\_\SariSariStoreSIS\SariSariStoreSIS\bin\Debug\Database1.mdf
+D:\_\SariSariStoreSIS\SariSariStoreSIS\bin\Debug\Database1_log.ldf
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\SariSariStoreSIS_Content.g.cs
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\AddNewProductWindow.g.cs
+D:\_\SariSariStoreSIS\SariSariStoreSIS\obj\Debug\AddNewProductWindow.baml
