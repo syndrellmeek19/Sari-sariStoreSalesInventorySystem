@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\_\SariSariStoreSIS\SariSariStoreSIS\App.xaml
-2-921327150
+3-1777709018
 2-1995130054
-131715160876
+171673139709
 13-1142990016
-AddNewProductWindow.xaml;MainWindow.xaml;
+AddNewProductWindow.xaml;AddNewSupplierWindow.xaml;MainWindow.xaml;
 
-False
+True
 

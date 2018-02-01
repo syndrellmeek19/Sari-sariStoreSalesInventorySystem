@@ -29,7 +29,7 @@ namespace SariSariStoreSIS
         {
             if (isValid()==true)
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_\SariSariStoreSIS\SariSariStoreSIS\Database1.mdf;Integrated Security=True;Connect Timeout=30;");
+                SqlConnection con = SQLCONNECTION.GetConnection();
                 SqlDataAdapter adapter1 = new SqlDataAdapter();
                 SqlCommand command1 = new SqlCommand("INSERT INTO [PRODUCT](Product_Name, Product_Type, Quantity, Measurement, Original_Price, Selling_Price) VALUES (@Product_Name, @Product_Type, @Quantity, @Measurement, @Original_Price, @Selling_Price)", con);
                 command1.Parameters.AddWithValue("@Product_Name", TxtName.Text);

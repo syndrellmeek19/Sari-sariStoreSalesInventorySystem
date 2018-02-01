@@ -74,9 +74,19 @@
     <Compile Include="AddNewProductWindow.xaml.cs">
       <DependentUpon>AddNewProductWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddNewSupplierWindow.xaml.cs">
+      <DependentUpon>AddNewSupplierWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ORDER.cs" />
     <Compile Include="PRODUCT.cs" />
+    <Compile Include="SQLCONNECTION.cs" />
+    <Compile Include="SUPPLIER.cs" />
     <Compile Include="ViewModelLocator.cs" />
     <Page Include="AddNewProductWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddNewSupplierWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

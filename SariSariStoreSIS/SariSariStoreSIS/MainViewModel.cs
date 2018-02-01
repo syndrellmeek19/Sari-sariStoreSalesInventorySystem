@@ -32,16 +32,33 @@ namespace SariSariStoreSIS
             get { return productList; }
             set { productList = value; }
         }
+
+        ObservableCollection<SUPPLIER> supplierNameList = new ObservableCollection<SUPPLIER>();
+        public ObservableCollection<SUPPLIER> SupplierNameList
+        {
+            get { return supplierNameList; }
+            set { supplierNameList = value; }
+        }
+        ObservableCollection<ORDER> orderList = new ObservableCollection<ORDER>();
+        public ObservableCollection<ORDER> OrderList
+        {
+            get { return orderList; }
+            set { orderList = value; }
+        }
+
+
         public PRODUCT SelectedProduct { get; set; }
+        public SUPPLIER SelectedSupplierName { get; set; }
+        public PRODUCT SelectedItem { get; set; }
 
         public void RefreshProduct()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_\SariSariStoreSIS\SariSariStoreSIS\Database1.mdf;Integrated Security=True;Connect Timeout=30;");
+            SqlConnection con = SQLCONNECTION.GetConnection();
             SqlDataAdapter sda = new SqlDataAdapter("SELECT * From [PRODUCT]", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
-            ViewModelLocator.MainViewModel.ProductList.Clear();
+            ProductList.Clear();
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 PRODUCT prod = new PRODUCT();
@@ -52,7 +69,7 @@ namespace SariSariStoreSIS
                 prod.Measurement = dt.Rows[i]["Measurement"].ToString();
                 prod.OriginalPrice = Convert.ToDouble(dt.Rows[i]["Original_Price"]);
                 prod.SellingPrice = Convert.ToDouble(dt.Rows[i]["Selling_Price"]);
-                ViewModelLocator.MainViewModel.ProductList.Add(prod);
+                ProductList.Add(prod);
             }
         }
         public void AddNewProduct()
@@ -70,13 +87,14 @@ namespace SariSariStoreSIS
                 productList.Add(prod);
             }
         }
+       
         public void DeleteProduct()
         {
             if (SelectedProduct!=null)
             {
                 if (MessageBox.Show("Are you sure?", "Delete Product", MessageBoxButton.YesNo, MessageBoxImage.Question)==MessageBoxResult.Yes)
                 {
-                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_\SariSariStoreSIS\SariSariStoreSIS\Database1.mdf;Integrated Security=True;Connect Timeout=30;");
+                    SqlConnection con = SQLCONNECTION.GetConnection();
                     SqlCommand command = new SqlCommand("DELETE FROM [PRODUCT] where Product_ID=@Product_ID", con);
                     command.Parameters.AddWithValue("@Product_ID", SelectedProduct.ProductID);
                     con.Open();
@@ -85,6 +103,54 @@ namespace SariSariStoreSIS
                 }
             }
         }
+        public void RefreshSupplier()
+        {
+            SqlConnection con = SQLCONNECTION.GetConnection();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * From [SUPPLIER]", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            SupplierNameList.Clear();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                SUPPLIER supp = new SUPPLIER();
+                supp.SupplierName = dt.Rows[i]["Supplier_Name"].ToString();
+                supp.SupplierID = Convert.ToInt16(dt.Rows[i]["Supplier_ID"]);
+                supp.ContactNumber = dt.Rows[i]["Contact_Number"].ToString();
+                supp.Location = dt.Rows[i]["Location"].ToString();
+                SupplierNameList.Add(supp);
+            }
+        }
+        public void AddNewSupplier()
+        {
+            AddNewSupplierWindow supplierWindow = new AddNewSupplierWindow();
+            supplierWindow.Owner = Application.Current.MainWindow;
+            supplierWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+
+            SUPPLIER supp = new SUPPLIER();
+            supplierWindow.DataContext = supp;
+
+            var result = supplierWindow.ShowDialog();
+            if (result == true)
+            {
+                supplierNameList.Add(supp);
+            }
+        }
+        public void DeleteSupplier()
+        {
+            if (SelectedSupplierName != null)
+            {
+                if (MessageBox.Show("Are you sure?", "Delete Supplier", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    SqlConnection con = SQLCONNECTION.GetConnection();
+                    SqlCommand command = new SqlCommand("DELETE FROM [SUPPLIER] where Supplier_ID=@Supplier_ID", con);
+                    command.Parameters.AddWithValue("@Supplier_ID", SelectedSupplierName.SupplierID);
+                    con.Open();
+                    command.ExecuteNonQuery();
+                    con.Close();
+                }
+            }
+        }
+        
         
     }
 }
